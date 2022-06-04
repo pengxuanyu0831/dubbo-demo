@@ -1,0 +1,19 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: demo-provied
+
+dubbo:
+  application:
+    name: ${spring.application.name}
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    timeout: 2000
+  protocol:
+    name: dubbo
+    port: 20890
+  # 扫描 @DubboService 注解
+  scan:
+    base-packages: com.dubbo.service
