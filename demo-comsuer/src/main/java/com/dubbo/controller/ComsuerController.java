@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/comsuer")
 public class ComsuerController {
 
-    @DubboReference(version = "1.0.0",protocol = "dubbo",loadbalance = "random")
+    @DubboReference(version = "1.0.0",protocol = "dubbo",loadbalance = "random",check = false,registry = "zhuhai,guangzhou")
     private UserService userService;
 
     @GetMapping("/getUserInfo1")
