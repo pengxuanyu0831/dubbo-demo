@@ -1,0 +1,13 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: demo-comsuer
+
+dubbo:
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    timeout: 2000
+  protocol:
+    name: dubbo

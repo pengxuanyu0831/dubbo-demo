@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * @program dubbo-demo
  * @description:
@@ -15,10 +17,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserVO {
+public class UserVO implements Serializable {
     String name;
 
     String userPhone;
 
     String userAddress;
+
 }
