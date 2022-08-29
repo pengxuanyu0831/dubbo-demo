@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  * @author: pengxuanyu
  * @create: 2022/06/04 14:46
  */
-@DubboService(version = "1.0.0",group = "guangdong")
+@DubboService(version = "1.0.0",protocol = "dubbo")
 @Slf4j
 @Component
 public class UserServiceImpl implements UserService {
