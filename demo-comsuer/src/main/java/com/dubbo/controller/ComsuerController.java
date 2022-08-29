@@ -22,7 +22,7 @@ public class ComsuerController {
     private UserService userService;
 
     @GetMapping("/getUserInfo1")
-    public void getUserInfo1() {
-        userService.getUserInfo();
+    public String getUserInfo1() {
+        return userService.getUserInfo().toString();
     }
 }
